@@ -1,7 +1,7 @@
 class Book < ApplicationRecord
   has_many :posts
   belongs_to :users 
- 
+  # accepts_nested_attributes_for :post
   
   def self.get_data
 

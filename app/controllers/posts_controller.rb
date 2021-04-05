@@ -25,7 +25,9 @@ class PostsController < ApplicationController
 
   
   def create
+    
     @post = Post.new(post_params)
+    binding.pry
 
 
     respond_to do |format|
@@ -41,6 +43,7 @@ class PostsController < ApplicationController
 
   
   def update
+    
     respond_to do |format|
       if @post.update(post_params)
         format.html { redirect_to @post, notice: "Post was successfully updated." }
