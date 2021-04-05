@@ -1,0 +1,23 @@
+<%= @user.username + "' s" %> <h1> Profile  </h1>
+
+
+<div>
+
+
+<p>Want to write a book review? <%= link_to "NY Times Book list!", books_path %></p>
+
+</div>
+
+<div>
+
+
+<p>Want to see posts? <%= link_to "Posts", posts_path %></p>
+
+</div>
+
+<div>
+
+
+<p> <%=link_to 'Log Out', sessions_path, method: :delete%></p>
+
+</div>
